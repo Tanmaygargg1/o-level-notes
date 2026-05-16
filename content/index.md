@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Ultimate-O-Level-Notes (2025 syllabus) 
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+This vault enscapsulates all o level notes
+
