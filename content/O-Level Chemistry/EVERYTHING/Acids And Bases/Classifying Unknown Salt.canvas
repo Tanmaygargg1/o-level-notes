@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"07b359b550088971","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"Classifying Unknown Oxide\n"},
+		{"id":"7eeab59ae563445a","x":-125,"y":60,"width":250,"height":60,"color":"4","type":"text","text":"Does oxide react with acids? "},
+		{"id":"a32333a7df651c70","x":-560,"y":282,"width":250,"height":60,"color":"3","type":"text","text":"Basic or Amphoteric oxides\n"},
+		{"id":"5e74901dbfcc6ab2","x":-340,"y":130,"width":110,"height":50,"type":"text","text":"Yes"},
+		{"id":"3231333533a0bfa6","x":245,"y":130,"width":110,"height":60,"type":"text","text":"No\n"},
+		{"id":"5a56775a2a73ad07","x":-590,"y":380,"width":250,"height":60,"color":"4","type":"text","text":"Does oxide react with alkalis"},
+		{"id":"4cd2d2418085f4cf","x":-960,"y":680,"width":250,"height":60,"type":"text","text":"[[Amphoteric Oxides]]\n"},
+		{"id":"fb1c069cc0a667f4","x":-770,"y":511,"width":120,"height":60,"type":"text","text":"Yes\n"},
+		{"id":"fd869e9e8c4c6887","x":-198,"y":680,"width":250,"height":60,"type":"text","text":"[[Basic Oxides]]\n"},
+		{"id":"70a63e7839e56464","x":-285,"y":491,"width":87,"height":50,"type":"text","text":"No\n"},
+		{"id":"4a7a6b0099b372a3","x":380,"y":280,"width":250,"height":58,"color":"3","type":"text","text":"Acidic or Neutral Oxide\n"},
+		{"id":"b4030bcdcbfef415","x":900,"y":650,"width":250,"height":60,"type":"text","text":"[[Neutral Oxides]]"},
+		{"id":"722958ae621e9212","x":380,"y":380,"width":250,"height":60,"color":"4","type":"text","text":"Does Oxide react with alkalis"},
+		{"id":"8b0ab5901f18fd5c","x":130,"y":710,"width":250,"height":60,"type":"text","text":"[[Acidic Oxides]]"},
+		{"id":"b37f80dab26aaf6e","x":305,"y":520,"width":100,"height":50,"type":"text","text":"Yes"},
+		{"id":"66ed3d6eccd776ef","x":820,"y":495,"width":100,"height":50,"type":"text","text":"No"}
+	],
+	"edges":[
+		{"id":"fd2c100d602d7794","fromNode":"07b359b550088971","fromSide":"bottom","toNode":"4a7a6b0099b372a3","toSide":"top"},
+		{"id":"f4a96609ea828b57","fromNode":"07b359b550088971","fromSide":"bottom","toNode":"a32333a7df651c70","toSide":"top"},
+		{"id":"9090c8872bfb60ec","fromNode":"a32333a7df651c70","fromSide":"bottom","toNode":"fd869e9e8c4c6887","toSide":"top"},
+		{"id":"adaec2e9a8eb86fc","fromNode":"a32333a7df651c70","fromSide":"bottom","toNode":"4cd2d2418085f4cf","toSide":"top"},
+		{"id":"28764e1c0c87e26e","fromNode":"4a7a6b0099b372a3","fromSide":"bottom","toNode":"b4030bcdcbfef415","toSide":"top"},
+		{"id":"1901ec2003ccbb2c","fromNode":"4a7a6b0099b372a3","fromSide":"bottom","toNode":"8b0ab5901f18fd5c","toSide":"top"}
+	]
+}

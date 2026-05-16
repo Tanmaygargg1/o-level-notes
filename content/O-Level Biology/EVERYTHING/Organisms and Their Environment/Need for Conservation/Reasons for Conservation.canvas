@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"7d1317f9d942c21b","type":"text","text":"Reasons for Conservation","x":-125,"y":-30,"width":285,"height":70,"color":"1"},
+		{"id":"68501afb57d3405c","type":"text","text":"1. **Maintaining Biodiversity by preventing extinction of species**\n\n- Maintenance -> of large gene pool -> important -> many wild plants and animals -> possess favourable genes. \n\t- by cross breeding diff. varietes -> wild plants and animals -> we can improve agricultural produce. \n\t- plants with better resistance to diseases and drought -> produced -> by crossing domestic species with wild species\n- Many tropical plants -> great importance -> are sources of medicinal drugs. \n\t- e.g. quinine, anti malarial drug from bark or Cinchona, and vinblastine, a drug used to treat leukemia derived from Madagascar rosy periwinkle. Many more medicinal drugs in plant species remain to be discovered. \n- Prevent extinction of species -> genetic diversity -> must be maintained. \n\t- any change in environmental conditions -> less likely to wipe out whole species.\n\n","x":-400,"y":-800,"width":760,"height":620},
+		{"id":"73d1bc4825c32226","type":"text","text":"**2. Scientific Research**\n- Study of wildlife -> provides useful information to humans\n- learn about evolution from studying wildlife. ","x":435,"y":-440,"width":385,"height":200},
+		{"id":"6e3aa916a6f44169","type":"text","text":"**3. Economic Purposes**\n- Marine life -> need to be conserved -> they are major source of human food\n- Tropical rainforests also provide food. Rice, Pineapple, Banana -> food plants that were developed from rainforest plants\n- Tropical plants -> provide raw materials -> for industries. \n\t- e.g. rattan -> used to make furniture, rubber from the latex of rubber trees used to make tyres, fibres from cotton plants used to make cloth.\n","x":451,"y":-25,"width":629,"height":345},
+		{"id":"a5a48287c156473a","type":"text","text":"**4. Maintain Stable and Balanced Ecosystem**\n- prevents disruption of natural cycles -> such a carbon cycle\n- prevents global warming","x":-108,"y":185,"width":368,"height":195},
+		{"id":"66b3da7649708c6a","type":"text","text":"**5. Prevent Natural scenery and wildlife for people to appreciate**\n- Natural resources -> enable outdoor recreational activities -> fishing, hiking, skiing","x":-560,"y":-13,"width":380,"height":198}
+	],
+	"edges":[
+		{"id":"42f33fb5793ac80a","fromNode":"7d1317f9d942c21b","fromSide":"top","toNode":"68501afb57d3405c","toSide":"bottom"},
+		{"id":"dc986dc73cdbe90d","fromNode":"7d1317f9d942c21b","fromSide":"top","toNode":"73d1bc4825c32226","toSide":"bottom"},
+		{"id":"3b86eacd0307aa10","fromNode":"7d1317f9d942c21b","fromSide":"right","toNode":"6e3aa916a6f44169","toSide":"left"},
+		{"id":"4e26ceb3b5ec7507","fromNode":"7d1317f9d942c21b","fromSide":"bottom","toNode":"a5a48287c156473a","toSide":"top"},
+		{"id":"a60881f6d4f52dec","fromNode":"7d1317f9d942c21b","fromSide":"left","toNode":"66b3da7649708c6a","toSide":"right"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

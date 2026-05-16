@@ -1,0 +1,182 @@
+{
+	"nodes":[
+		{
+			"id":"10e98a82cf267f3d",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Human Respiratory System Main Note.md",
+			"styleAttributes":{},
+			"x":-251,
+			"y":196,
+			"width":1331,
+			"height":1924
+		},
+		{
+			"id":"9f2c810f5703ae25",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Types of Respiration/Aerobic Respiration.md",
+			"styleAttributes":{},
+			"x":-1360,
+			"y":320,
+			"width":880,
+			"height":880
+		},
+		{
+			"id":"c7e48fcb5b5fb1c7",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Types of Respiration/Anaerobic Respiration.md",
+			"styleAttributes":{},
+			"x":-1600,
+			"y":1360,
+			"width":1040,
+			"height":1200
+		},
+		{
+			"id":"530a22accf8bfe29",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Types of Respiration/Oxygen Debt.md",
+			"styleAttributes":{},
+			"x":-2520,
+			"y":1880,
+			"width":760,
+			"height":640
+		},
+		{
+			"id":"be78797a6454b1d0",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Parts of the Human Respiratory System.md",
+			"styleAttributes":{},
+			"x":1440,
+			"y":80,
+			"width":2160,
+			"height":4600
+		},
+		{
+			"id":"d21a12679c7f7154",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Lungs + Alveoli/Parts of the Lungs.md",
+			"styleAttributes":{},
+			"x":4160,
+			"y":1440,
+			"width":1720,
+			"height":1960
+		},
+		{
+			"id":"54b4cb9bf7ef48a7",
+			"type":"text",
+			"text":"Lungs",
+			"styleAttributes":{},
+			"x":3760,
+			"y":2360,
+			"width":250,
+			"height":60
+		},
+		{
+			"id":"19c09697cbd70133",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Lungs + Alveoli/Lung Capacity.md",
+			"styleAttributes":{},
+			"x":4060,
+			"y":880,
+			"width":960,
+			"height":400
+		},
+		{
+			"id":"d2a88545e62ad226",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Lungs + Alveoli/Adaptations of the Lungs for efficient gas exchange.md",
+			"styleAttributes":{},
+			"x":4160,
+			"y":3600,
+			"width":860,
+			"height":400
+		},
+		{
+			"id":"e079d7a76b07c8a4",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Lungs + Alveoli/Gas exchange in the Alveoli.md",
+			"styleAttributes":{},
+			"x":6140,
+			"y":2100,
+			"width":1180,
+			"height":1000
+		},
+		{
+			"id":"0215a84431c2ae49",
+			"type":"text",
+			"text":"Human Respiratory System",
+			"styleAttributes":{},
+			"x":-320,
+			"y":-120,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"a672d439aa17162e",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Harmful Effects of Tobacco Smoke + Diseases/Effects of Tobacco Smoke on Human Health.md",
+			"styleAttributes":{},
+			"x":300,
+			"y":-640,
+			"width":400,
+			"height":400
+		},
+		{
+			"id":"9b9ea27620352ba7",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Harmful Effects of Tobacco Smoke + Diseases/Disease caused by Tobacco Smoke.md",
+			"styleAttributes":{},
+			"x":980,
+			"y":-1040,
+			"width":1060,
+			"height":980
+		},
+		{
+			"id":"89798cecc5fb1637",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Breathing/Inspiration Process.md",
+			"styleAttributes":{},
+			"x":-2040,
+			"y":2950,
+			"width":1340,
+			"height":1620
+		},
+		{
+			"id":"06147f80f12c22ad",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Breathing/Breathing.md",
+			"styleAttributes":{},
+			"x":-251,
+			"y":2320,
+			"width":1211,
+			"height":1640
+		},
+		{
+			"id":"3daab64c9bbf9c3d",
+			"type":"file",
+			"file":"O-Level Biology/EVERYTHING/Human Respiratory System/Main MD files; Human Respiratory System/Breathing/Expiration Process.md",
+			"styleAttributes":{},
+			"x":-366,
+			"y":4200,
+			"width":1440,
+			"height":1440
+		}
+	],
+	"edges":[
+		{"id":"032a6e43990be452","fromNode":"0215a84431c2ae49","fromSide":"bottom","toNode":"10e98a82cf267f3d","toSide":"top"},
+		{"id":"ec226378015974d5","fromNode":"10e98a82cf267f3d","fromSide":"left","toNode":"9f2c810f5703ae25","toSide":"right"},
+		{"id":"f66bcf3159952860","fromNode":"10e98a82cf267f3d","fromSide":"left","toNode":"c7e48fcb5b5fb1c7","toSide":"right"},
+		{"id":"a63939a5c5d2a521","fromNode":"c7e48fcb5b5fb1c7","fromSide":"left","toNode":"530a22accf8bfe29","toSide":"right"},
+		{"id":"7f6dffd1aaa5ec82","fromNode":"10e98a82cf267f3d","fromSide":"right","toNode":"be78797a6454b1d0","toSide":"left"},
+		{"id":"968cf25612222041","fromNode":"be78797a6454b1d0","fromSide":"right","toNode":"54b4cb9bf7ef48a7","toSide":"left"},
+		{"id":"6088c9375a34be23","fromNode":"54b4cb9bf7ef48a7","fromSide":"right","toNode":"d21a12679c7f7154","toSide":"left"},
+		{"id":"4aee73df08fbcd2e","fromNode":"54b4cb9bf7ef48a7","fromSide":"top","toNode":"19c09697cbd70133","toSide":"left"},
+		{"id":"33e1be3077b28b26","fromNode":"54b4cb9bf7ef48a7","fromSide":"bottom","toNode":"d2a88545e62ad226","toSide":"left"},
+		{"id":"74e0fbbe982d3ae8","fromNode":"d21a12679c7f7154","fromSide":"right","toNode":"e079d7a76b07c8a4","toSide":"left"},
+		{"id":"c4a423a1459b6d43","fromNode":"10e98a82cf267f3d","fromSide":"bottom","toNode":"06147f80f12c22ad","toSide":"top"},
+		{"id":"d240ca31342e13ad","fromNode":"06147f80f12c22ad","fromSide":"left","toNode":"89798cecc5fb1637","toSide":"right"},
+		{"id":"0136165ce6f4ed6d","fromNode":"06147f80f12c22ad","fromSide":"bottom","toNode":"3daab64c9bbf9c3d","toSide":"top"},
+		{"id":"3b3a27c42ae415b1","fromNode":"10e98a82cf267f3d","fromSide":"top","toNode":"a672d439aa17162e","toSide":"bottom"},
+		{"id":"a8e4ea6ad7084e67","fromNode":"10e98a82cf267f3d","fromSide":"top","toNode":"9b9ea27620352ba7","toSide":"bottom"}
+	],
+	"metadata":{}
+}
