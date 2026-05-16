@@ -1,0 +1,53 @@
+{
+	"nodes":[
+		{
+			"id":"2f5a2f845a8a82ac",
+			"type":"file",
+			"file":"O-Level History/EVERYTHING/Nazi Germany/Main MD Files/Nazi Germany Main Note.md",
+			"styleAttributes":{},
+			"x":-400,
+			"y":-480,
+			"width":960,
+			"height":960
+		},
+		{
+			"id":"d16806b842771692",
+			"type":"file",
+			"file":"O-Level History/EVERYTHING/Nazi Germany/Main MD Files/Weaknesses of Weimar Republic/Weaknesses of Weimar Republic.md",
+			"styleAttributes":{},
+			"x":920,
+			"y":-640,
+			"width":1000,
+			"height":1280
+		},
+		{
+			"id":"f0a95508a08c5a5a",
+			"type":"text",
+			"text":"Political Challenges",
+			"styleAttributes":{},
+			"x":2252,
+			"y":-303,
+			"width":260,
+			"height":60
+		}
+	],
+	"edges":[
+		{
+			"id":"702784edefa1d01b",
+			"styleAttributes":{},
+			"fromNode":"2f5a2f845a8a82ac",
+			"fromSide":"right",
+			"toNode":"d16806b842771692",
+			"toSide":"left"
+		},
+		{
+			"id":"8d3e9033a3beaa82",
+			"styleAttributes":{},
+			"fromNode":"d16806b842771692",
+			"fromSide":"right",
+			"toNode":"f0a95508a08c5a5a",
+			"toSide":"left"
+		}
+	],
+	"metadata":{}
+}

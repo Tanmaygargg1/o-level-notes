@@ -1,0 +1,16 @@
+---
+dg-home: 
+dg-publish: true
+---
+1926 -> emperor Yoshihito was succeeded by Emperor Showa -> also referred to as emperor Hirohito.
+
+many of Japans political, economic, and social problems -> continued and worsened due to his reign.
+Financial crisis ->such as banking crisis in 1927 -> led to increasing public resentment towards civilian govt.
+___
+
+|                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. in  1920s -> Japan had many banks -> but many of them were small. <br><br>These banks -> were focused on the small number of borrowers -> whom they loaned large amounts of money to. <br>-> these borrowers tended to be from the same few industries. | 2. These made banks vulnerable. if industries did not do well financially -> the banks would have difficulty collecting their loans. <br>-> this was what happened after WW1.<br>to make matters worse -> new loans that most Japanese banks issues - in 1923 -> were to companies that were not stable. |
+| By 1927 -> there was widespread panic among the Japanese -> that banks did not have enough money due to bed debts.<br>-> japan then fell into a financial crisis -> as people tried to withdraw their deposits -> leading to collapse of over 20 banks.    | 4. Collapse of banks led to widespread suffering among the common people who lost their savings. <br>                                                                                                                                                                                                    |
+| Japanese government -> tried to deal with the crisis -> by introducing new policies -> to stabilize the banks.<br>by early 1929 -> Most banks were stable and making profits again.                                                                        | 6. It seemed the crisis was over. <br>All this was to change with the wall street crash in October 1929.                                                                                                                                                                                                 |
+* for economic crisis, you cannot just mention this alone, you have to mention this with at leat one other factor, like the great depression. 

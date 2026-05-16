@@ -1,0 +1,65 @@
+{
+	"nodes":[
+		{
+			"id":"5869f3e35b5e97c1",
+			"type":"text",
+			"text":"Efforts at Disarmament in 1920s\n",
+			"styleAttributes":{},
+			"x":-160,
+			"y":0,
+			"width":300,
+			"height":80
+		},
+		{
+			"id":"5fba04301dd55b37",
+			"type":"text",
+			"text":"**League Commission to Prepare for World disarmament conference (1926) - Failure**\n* failed as Britain and France refused to Cooperate",
+			"styleAttributes":{},
+			"x":-460,
+			"y":217,
+			"width":520,
+			"height":203,
+			"color":"1"
+		},
+		{
+			"id":"5e6d2106e2cb5f50",
+			"type":"text",
+			"text":"**Kellogg - Briand Pact (1928) - Failure**\n* Negotiated outside the league between 15 countries including the US, France, Germany, Britain, Italy, Japan\n* Agreement that force should not be used to settle disputes\n* No clear way to enforce the pact",
+			"styleAttributes":{},
+			"x":237,
+			"y":217,
+			"width":463,
+			"height":303,
+			"color":"1"
+		},
+		{
+			"id":"b9a84b471ec76f3c",
+			"type":"text",
+			"text":"**Washington Naval Conference (1921) - Success**\n* Negotiated outside the league to limit size and number of warships held by Britain, France, Japan and United states. \n* Organized by the US, which was not a league member\n* Ratio of tonnage of capital ships of Britain, the US, Japan, France, Italy set at 5:5:3:1.67: 1.67\n\nLinked to [[London Naval Conference, 1930]]\n\n",
+			"styleAttributes":{},
+			"x":-560,
+			"y":-720,
+			"width":480,
+			"height":450,
+			"color":"4"
+		},
+		{
+			"id":"3651f7d9016f65aa",
+			"type":"text",
+			"text":"**Locarno Treaties (1925) - Partial Success**\n* Negotiated outside the league between Britain, Germany, France, Italy, Belgium, Poland and Czechoslovakia\n* Germany accepted its western borders, including the demilitarization of rhineland\n* Weimar Government agreed to settle any disputes with above mentioned countries through the league",
+			"styleAttributes":{},
+			"x":237,
+			"y":-560,
+			"width":560,
+			"height":440,
+			"color":"3"
+		}
+	],
+	"edges":[
+		{"id":"2f60ac757a939090","fromNode":"5869f3e35b5e97c1","fromSide":"top","toNode":"b9a84b471ec76f3c","toSide":"bottom"},
+		{"id":"196fae630f9326f5","fromNode":"5869f3e35b5e97c1","fromSide":"top","toNode":"3651f7d9016f65aa","toSide":"bottom"},
+		{"id":"bb14dccfd7c8406e","fromNode":"5869f3e35b5e97c1","fromSide":"bottom","toNode":"5fba04301dd55b37","toSide":"top"},
+		{"id":"09b09ec55b08c10a","fromNode":"5869f3e35b5e97c1","fromSide":"bottom","toNode":"5e6d2106e2cb5f50","toSide":"top"}
+	],
+	"metadata":{"version":"1.0-1.0"}
+}

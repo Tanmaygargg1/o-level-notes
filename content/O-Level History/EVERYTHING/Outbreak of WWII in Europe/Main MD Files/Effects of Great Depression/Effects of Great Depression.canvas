@@ -1,0 +1,71 @@
+{
+	"nodes":[
+		{
+			"id":"fc792b87aef159aa",
+			"type":"text",
+			"text":"Response to the Great Depression",
+			"styleAttributes":{},
+			"x":-180,
+			"y":-20,
+			"width":325,
+			"height":100
+		},
+		{
+			"id":"d3f2c48c3f4108e2",
+			"type":"text",
+			"text":"1. **Protectionism**\nSome countries (Britain, France and the US) => introduced tariffs => to protect their own industries and limit or stop imports. \nTheir trading partners did the same => resulting in overall fall in trade volumes. ",
+			"styleAttributes":{},
+			"x":-520,
+			"y":-440,
+			"width":376,
+			"height":320
+		},
+		{
+			"id":"3cb3694aa231f3f3",
+			"type":"text",
+			"text":"2. **Calling in Loans**\nAs the US economy struggled => US banks called in their loans.\nLed to collapse of Banks and businesses which in turn caused mass unemployment",
+			"styleAttributes":{},
+			"x":145,
+			"y":-440,
+			"width":400,
+			"height":240
+		},
+		{
+			"id":"a5197a8bfbbd883d",
+			"type":"text",
+			"text":"4. **Radicalism**\nIn some countries => Great Depression helped bring radical regimes to power => most notably the Nazi party in Germany.\nin other states such as italy => the GD caused existing regimes to adopt more extreme and aggressive policies. ",
+			"styleAttributes":{},
+			"x":145,
+			"y":209,
+			"width":375,
+			"height":391
+		},
+		{
+			"id":"0b8bc6123134ed38",
+			"type":"text",
+			"text":"",
+			"styleAttributes":{},
+			"x":220,
+			"y":20,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"3df0395415e5e065",
+			"type":"text",
+			"text":"3. **Rearmament**\nMany countries (Britain, France, Italy and Japan) began the rearmament process to boost industry and create jobs for the unemployed ",
+			"styleAttributes":{},
+			"x":-450,
+			"y":240,
+			"width":306,
+			"height":303
+		}
+	],
+	"edges":[
+		{"id":"dbc0ff3a356e2e6c","fromNode":"fc792b87aef159aa","fromSide":"top","toNode":"d3f2c48c3f4108e2","toSide":"bottom"},
+		{"id":"914a0a1f759656e6","fromNode":"fc792b87aef159aa","fromSide":"top","toNode":"3cb3694aa231f3f3","toSide":"bottom"},
+		{"id":"3f97217edd05fea7","fromNode":"fc792b87aef159aa","fromSide":"bottom","toNode":"3df0395415e5e065","toSide":"top"},
+		{"id":"a217cfcd47146bdc","fromNode":"fc792b87aef159aa","fromSide":"bottom","toNode":"a5197a8bfbbd883d","toSide":"top"}
+	],
+	"metadata":{}
+}
