@@ -1,7 +1,44 @@
 @use "./base.scss";
 
-:root {
-  --secondary: #ff69b4;
-  --tertiary: #ff9ecf;
+/* =========================
+   AMOLEd + Pink Theme Override
+   ========================= */
+
+:root[saved-theme="light"] {
+  --secondary: #ff4fa3;
+  --tertiary: #ff8cc6;
 }
-// put your custom CSS here!
+
+/* True AMOLED dark mode */
+:root[saved-theme="dark"] {
+  --light: #000000;        /* background */
+  --dark: #ffffff;         /* main text */
+  --darkgray: #cfcfcf;
+  --gray: #9a9a9a;
+  --lightgray: #1a1a1a;
+
+  --secondary: #ff4fa3;    /* pink links */
+  --tertiary: #ff8cc6;     /* hover pink */
+  --highlight: #2a0018;    /* subtle selection highlight */
+}
+
+/* Optional: smoother selection color */
+::selection {
+  background: rgba(255, 79, 163, 0.25);
+}
+
+/* Optional: slightly softer internal wiki link highlight */
+a.internal {
+  background-color: rgba(255, 79, 163, 0.08);
+}
+
+/* Optional: nicer checkbox accent */
+input[type="checkbox"]:checked {
+  border-color: var(--secondary);
+  background-color: var(--secondary);
+}
+
+/* Optional: sidebar / UI accent line */
+blockquote {
+  border-left: 3px solid var(--secondary);
+}
