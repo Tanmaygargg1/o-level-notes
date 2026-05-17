@@ -2,37 +2,38 @@
 
 /* ── LIGHT MODE ──────────────────────────────────────────────────────────── */
 :root[saved-theme="light"],
-[data-theme="light"] {
+html[saved-theme="light"] {
   --secondary: #ff4fa3;
   --tertiary: #ff8cc6;
 }
 
 /* ── AMOLED DARK MODE ────────────────────────────────────────────────────── */
 :root[saved-theme="dark"],
-[data-theme="dark"] {
-  --light: #000000;
-  --dark: #ffffff;
-  --darkgray: #d0d0d0;
-  --gray: #8a8a8a;
-  --lightgray: #1a1a1a;
-  --secondary: #ff4fa3;
-  --tertiary: #ff8cc6;
-  --highlight: rgba(255, 79, 163, 0.10);
+html[saved-theme="dark"] {
+  --light: #000000 !important;
+  --dark: #ffffff !important;
+  --darkgray: #d0d0d0 !important;
+  --gray: #8a8a8a !important;
+  --lightgray: #1a1a1a !important;
+  --secondary: #ff4fa3 !important;
+  --tertiary: #ff8cc6 !important;
+  --highlight: rgba(255, 79, 163, 0.10) !important;
 }
 
-/* Force true black on the body itself (catches any stragglers) */
-body {
+/* Nuclear option — force black background regardless of var cascade */
+html[saved-theme="dark"],
+html[saved-theme="dark"] body,
+html[saved-theme="dark"] #quartz-root {
   background-color: #000000 !important;
 }
 
 /* ── MULTICOLOUR HEADINGS ────────────────────────────────────────────────── */
-/* Applied globally so they work in both light and dark mode */
-h1 { color: #ff6b6b !important; }   /* coral red   */
-h2 { color: #ffd93d !important; }   /* amber       */
-h3 { color: #6bcb77 !important; }   /* mint green  */
-h4 { color: #4d96ff !important; }   /* sky blue    */
-h5 { color: #c77dff !important; }   /* violet      */
-h6 { color: #ff9a3c !important; }   /* orange      */
+h1 { color: #ff6b6b !important; }
+h2 { color: #ffd93d !important; }
+h3 { color: #6bcb77 !important; }
+h4 { color: #4d96ff !important; }
+h5 { color: #c77dff !important; }
+h6 { color: #ff9a3c !important; }
 
 /* ── POLISH ──────────────────────────────────────────────────────────────── */
 ::selection {
