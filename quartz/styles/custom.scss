@@ -1,13 +1,13 @@
 @use "./base.scss";
 
-/* LIGHT MODE */
+/* ── LIGHT MODE ──────────────────────────────────────────────────────────── */
 :root[saved-theme="light"],
 [data-theme="light"] {
   --secondary: #ff4fa3;
   --tertiary: #ff8cc6;
 }
 
-/* AMOLED DARK MODE */
+/* ── AMOLED DARK MODE ────────────────────────────────────────────────────── */
 :root[saved-theme="dark"],
 [data-theme="dark"] {
   --light: #000000;
@@ -15,15 +15,28 @@
   --darkgray: #d0d0d0;
   --gray: #8a8a8a;
   --lightgray: #1a1a1a;
-
   --secondary: #ff4fa3;
   --tertiary: #ff8cc6;
-  --highlight: #2a0018;
+  --highlight: rgba(255, 79, 163, 0.10);
 }
 
-/* Optional polish */
+/* Force true black on the body itself (catches any stragglers) */
+body {
+  background-color: #000000 !important;
+}
+
+/* ── MULTICOLOUR HEADINGS ────────────────────────────────────────────────── */
+/* Applied globally so they work in both light and dark mode */
+h1 { color: #ff6b6b !important; }   /* coral red   */
+h2 { color: #ffd93d !important; }   /* amber       */
+h3 { color: #6bcb77 !important; }   /* mint green  */
+h4 { color: #4d96ff !important; }   /* sky blue    */
+h5 { color: #c77dff !important; }   /* violet      */
+h6 { color: #ff9a3c !important; }   /* orange      */
+
+/* ── POLISH ──────────────────────────────────────────────────────────────── */
 ::selection {
-  background: rgba(255, 79, 163, 0.25);
+  background: rgba(255, 79, 163, 0.30);
 }
 
 a.internal {
