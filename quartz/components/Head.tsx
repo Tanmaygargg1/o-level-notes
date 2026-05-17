@@ -97,6 +97,7 @@ export default (() => {
             return resource
           }
         })}
+        <script data-goatcounter="https://tanmaygarg.goatcounter.com/count" async src="//gc.zgo.at/count.js" />
       </head>
     )
   }
