@@ -1,44 +1,31 @@
 @use "./base.scss";
 
-/* =========================
-   AMOLEd + Pink Theme Override
-   ========================= */
-
-:root[saved-theme="light"] {
+/* LIGHT MODE */
+:root[saved-theme="light"],
+[data-theme="light"] {
   --secondary: #ff4fa3;
   --tertiary: #ff8cc6;
 }
 
-/* True AMOLED dark mode */
-:root[saved-theme="dark"] {
-  --light: #000000;        /* background */
-  --dark: #ffffff;         /* main text */
-  --darkgray: #cfcfcf;
-  --gray: #9a9a9a;
+/* AMOLED DARK MODE */
+:root[saved-theme="dark"],
+[data-theme="dark"] {
+  --light: #000000;
+  --dark: #ffffff;
+  --darkgray: #d0d0d0;
+  --gray: #8a8a8a;
   --lightgray: #1a1a1a;
 
-  --secondary: #ff4fa3;    /* pink links */
-  --tertiary: #ff8cc6;     /* hover pink */
-  --highlight: #2a0018;    /* subtle selection highlight */
+  --secondary: #ff4fa3;
+  --tertiary: #ff8cc6;
+  --highlight: #2a0018;
 }
 
-/* Optional: smoother selection color */
+/* Optional polish */
 ::selection {
   background: rgba(255, 79, 163, 0.25);
 }
 
-/* Optional: slightly softer internal wiki link highlight */
 a.internal {
   background-color: rgba(255, 79, 163, 0.08);
-}
-
-/* Optional: nicer checkbox accent */
-input[type="checkbox"]:checked {
-  border-color: var(--secondary);
-  background-color: var(--secondary);
-}
-
-/* Optional: sidebar / UI accent line */
-blockquote {
-  border-left: 3px solid var(--secondary);
 }
