@@ -8,38 +8,87 @@ html[saved-theme="light"] {
 }
 
 /* ── AMOLED DARK MODE ────────────────────────────────────────────────────── */
+/* True black background is deliberate (OLED), but every other neutral is
+   tinted a touch toward the pink accent instead of pure gray, so the palette
+   reads as one family rather than grayscale-plus-pink. */
 :root[saved-theme="dark"],
 html[saved-theme="dark"] {
   --light: #000000 !important;
-  --dark: #ffffff !important;
-  --darkgray: #d0d0d0 !important;
-  --gray: #8a8a8a !important;
-  --lightgray: #1a1a1a !important;
+  --dark: #f3f1f2 !important;
+  --darkgray: #cfc9cc !important;
+  --gray: #847e81 !important;
+  --lightgray: #19171a !important;
   --secondary: #ff4fa3 !important;
   --tertiary: #ff8cc6 !important;
-  --highlight: rgba(255, 79, 163, 0.10) !important;
+  --highlight: rgba(255, 79, 163, 0.08) !important;
+  --textHighlight: rgba(255, 79, 163, 0.22) !important;
 }
 
-/* Nuclear option — force black background regardless of var cascade */
 html[saved-theme="dark"],
 html[saved-theme="dark"] body,
 html[saved-theme="dark"] #quartz-root {
-  background-color: #000000 !important;
+  background-color: #000000;
 }
 
-/* ── MULTICOLOUR HEADINGS ────────────────────────────────────────────────── */
-h1 { color: #ff6b6b !important; }
-h2 { color: #ffd93d !important; }
-h3 { color: #6bcb77 !important; }
-h4 { color: #4d96ff !important; }
-h5 { color: #c77dff !important; }
-h6 { color: #ff9a3c !important; }
+/* ── TYPOGRAPHY ───────────────────────────────────────────────────────────── */
+/* Hierarchy through weight and spacing, not a different color per level. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark);
+}
 
-/* ── POLISH ──────────────────────────────────────────────────────────────── */
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.article-title {
+  letter-spacing: -0.02em;
+}
+
+/* ── LINKS & SELECTION ────────────────────────────────────────────────────── */
 ::selection {
-  background: rgba(255, 79, 163, 0.30);
+  background: rgba(255, 79, 163, 0.28);
 }
 
 a.internal {
-  background-color: rgba(255, 79, 163, 0.08);
+  background-color: rgba(255, 79, 163, 0.07);
+  transition: background-color 0.15s ease-out;
+
+  &:hover {
+    background-color: rgba(255, 79, 163, 0.16);
+  }
+}
+
+/* ── FOCUS STATE ──────────────────────────────────────────────────────────── */
+/* Visible, on-brand focus ring for keyboard navigation. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ── MOTION ───────────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

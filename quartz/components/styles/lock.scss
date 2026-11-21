@@ -1,0 +1,89 @@
+#lock-gate {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background-color: var(--light);
+
+  &[data-active="true"] {
+    display: flex;
+  }
+
+  &.lock-gate-hidden {
+    display: none !important;
+  }
+}
+
+.lock-gate-card {
+  width: 100%;
+  max-width: 22rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 1px solid var(--lightgray);
+  border-radius: 10px;
+  background-color: var(--light);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.12);
+}
+
+.lock-gate-title {
+  margin: 0;
+  font-family: var(--headerFont);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+.lock-gate-subtitle {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--gray);
+}
+
+#lock-gate-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  font-family: var(--bodyFont);
+  color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  transition: border-color 0.15s ease-out;
+
+  &:focus {
+    outline: none;
+    border-color: var(--secondary);
+  }
+}
+
+.lock-gate-card button[type="submit"] {
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--bodyFont);
+  color: var(--light);
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-out;
+
+  &:hover {
+    background-color: var(--tertiary);
+  }
+}
+
+#lock-gate-error {
+  margin: 0;
+  min-height: 1.1rem;
+  font-size: 0.85rem;
+  color: #d64545;
+}

@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: {
       provider: "goatcounter",
-      websiteID: "tanmaygarg"
+      websiteId: "tanmaygarg",
     },
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
@@ -41,7 +41,7 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#000000",        // ← true AMOLED black
+          light: "#000000", // ← true AMOLED black
           lightgray: "#1a1a1a",
           gray: "#646464",
           darkgray: "#d4d4d4",

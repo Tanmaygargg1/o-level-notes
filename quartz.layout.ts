@@ -5,7 +5,13 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.LockGate({
+      publicSlugs: ["index", "Book-a-Consultation"],
+      // SHA-256 hex digest of the password
+      passwordHash: "28ba57224a8bd4ec630f59a98d353561e7267b79af92fa6b7af7965e5aadbef4",
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
