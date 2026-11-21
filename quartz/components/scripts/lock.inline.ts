@@ -34,9 +34,15 @@ function applyLockState() {
 
 applyLockState()
 
-// Links into locked pages (e.g. the "Notes" tile on the home page) show the
-// gate right where you are instead of navigating first. Once unlocked, the
-// pending destination is where we actually go.
+// On fresh page loads this script runs in <head> before the body is parsed,
+// so the lock-gate element doesn't exist yet. Retry once the DOM is ready.
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => {
+    applyLockState()
+    bindLockTriggers()
+  })
+}
+
 function bindLockTriggers() {
   const gate = document.getElementById("lock-gate")
   if (!gate) return
