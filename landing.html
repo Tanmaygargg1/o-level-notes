@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate O-Level Notes (2025 Syllabus)</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#000;
+  color:#f3f1f2;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,sans-serif;
+  line-height:1.6;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:3rem 1.25rem;
+}
+.wrap{max-width:680px;width:100%}
+
+h1{
+  font-size:clamp(2rem,6vw,2.75rem);
+  font-weight:700;
+  letter-spacing:-0.02em;
+  margin-bottom:0.5rem;
+}
+.accent{color:#ff4fa3}
+.subtitle{color:#cfc9cc;font-size:1.05rem;margin-bottom:2.5rem}
+
+.cards{display:flex;gap:1.25rem;margin-bottom:2rem}
+.card{
+  flex:1 1 0;
+  border:1px solid #19171a;
+  border-radius:12px;
+  padding:1.75rem;
+  transition:border-color .15s ease-out;
+}
+.card:hover{border-color:#ff4fa3}
+.card h2{font-size:1.25rem;font-weight:600;margin-bottom:0.5rem}
+.card p{color:#847e81;font-size:0.95rem;margin-bottom:1.25rem}
+
+.pw-field{
+  display:flex;
+  gap:0.5rem;
+  flex-wrap:wrap;
+}
+.pw-field input{
+  flex:1 1 140px;
+  background:transparent;
+  border:none;
+  border-bottom:2px solid #19171a;
+  color:#f3f1f2;
+  font-size:1rem;
+  padding:0.5rem 0;
+  outline:none;
+  transition:border-color .15s;
+}
+.pw-field input:focus{border-bottom-color:#ff4fa3}
+.pw-field input::placeholder{color:#847e81}
+
+.btn{
+  display:inline-block;
+  background:#ff4fa3;
+  color:#000;
+  font-weight:700;
+  font-size:0.95rem;
+  border:none;
+  border-radius:8px;
+  padding:0.6rem 1.5rem;
+  cursor:pointer;
+  transition:background .15s;
+  text-decoration:none;
+}
+.btn:hover{background:#ff8cc6}
+
+.pw-error{color:#ff4f4f;font-size:0.85rem;margin-top:0.5rem;min-height:1.2em}
+
+.consult-btn{
+  background:transparent;
+  color:#ff4fa3;
+  border:1px solid #ff4fa3;
+  font-weight:700;
+  font-size:0.95rem;
+  border-radius:8px;
+  padding:0.6rem 1.5rem;
+  cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.consult-btn:hover{background:#ff4fa3;color:#000}
+
+.panel{
+  display:none;
+  border-top:1px solid #19171a;
+  padding-top:1.5rem;
+  margin-bottom:2rem;
+}
+.panel.open{display:block}
+.panel h3{font-size:1.1rem;font-weight:600;margin-bottom:0.5rem}
+.panel p{color:#847e81;font-size:0.95rem;margin-bottom:1rem}
+#cal-inline{width:100%;min-height:650px}
+
+.guide{
+  display:none;
+  border-top:1px solid #19171a;
+  padding-top:1.5rem;
+  margin-bottom:2rem;
+}
+.guide.open{display:block}
+.guide h3{font-size:1.1rem;font-weight:600;margin-bottom:0.5rem}
+.guide ul{color:#cfc9cc;padding-left:1.25rem;font-size:0.95rem}
+.guide ul li{margin-bottom:0.35rem}
+
+.info{
+  border-top:1px solid #19171a;
+  padding-top:1.5rem;
+  margin-top:auto;
+}
+.info h3{font-size:1rem;font-weight:600;margin-bottom:0.5rem}
+.info p{color:#847e81;font-size:0.9rem}
+.info a{color:#ff4fa3;text-decoration:none}
+.info a:hover{color:#ff8cc6}
+
+.guide-link{
+  color:#ff4fa3;
+  background:none;
+  border:none;
+  font:inherit;
+  font-size:0.95rem;
+  cursor:pointer;
+  padding:0;
+  margin-bottom:1.5rem;
+  display:inline-block;
+}
+.guide-link:hover{color:#ff8cc6}
+
+@media(max-width:540px){
+  .cards{flex-direction:column}
+  body{padding:2rem 1rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Ultimate <span class="accent">O-Level</span> Notes</h1>
+  <p class="subtitle">A free, complete set of O-Level revision notes covering Biology, Chemistry, Physics, History, Social Studies, and English for the 2025 syllabus.</p>
+
+  <button class="guide-link" id="guide-toggle">What's in this vault? →</button>
+
+  <div class="guide" id="guide-panel">
+    <h3>What's in this vault</h3>
+    <ul>
+      <li>All content required for O-Level Biology, Chemistry, Physics, Elective History, Social Studies, and English</li>
+      <li>Answer techniques</li>
+      <li>Sample questions and answers</li>
+      <li>And more!</li>
+    </ul>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h2>📘 Notes</h2>
+      <p>Browse every O-Level subject: Biology, Chemistry, Physics, History, Social Studies, and English.</p>
+      <form class="pw-field" id="pw-form">
+        <input type="password" id="pw-input" placeholder="Password" autocomplete="off">
+        <button type="submit" class="btn">Unlock</button>
+      </form>
+      <p class="pw-error" id="pw-error"></p>
+    </div>
+    <div class="card">
+      <h2>📅 Consultation</h2>
+      <p>Book a 1-on-1 session with me if you need extra help.</p>
+      <button class="consult-btn" id="consult-toggle">Book a slot →</button>
+    </div>
+  </div>
+
+  <div class="panel" id="consult-panel">
+    <h3>Book a Consultation</h3>
+    <p>Pick a time below and it'll go straight onto my calendar.</p>
+    <div id="cal-inline"></div>
+  </div>
+
+  <div class="info">
+    <h3>Contact Me!</h3>
+    <p>If there are any changes that are needed (any mistakes whatsoever), feel free to contact me! Or if you would simply like to reach out for any help as well!</p>
+    <p style="margin-top:0.5rem">Phone: <a href="tel:+6586543023">+65 86543023</a><br>Email: <a href="mailto:Tanmay.g1474@gmail.com">Tanmay.g1474@gmail.com</a></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var HASH = "28ba57224a8bd4ec630f59a98d353561e7267b79af92fa6b7af7965e5aadbef4";
+  var UNLOCK_KEY = "lock-gate-unlocked";
+
+  // If already unlocked this session, go straight to notes
+  // (only on direct landing visit, not if they navigated back)
+  // We won't auto-redirect — let them choose again.
+
+  // Password form
+  document.getElementById("pw-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var input = document.getElementById("pw-input");
+    var error = document.getElementById("pw-error");
+    var val = input.value;
+    var data = new TextEncoder().encode(val);
+    crypto.subtle.digest("SHA-256", data).then(function(buf){
+      var hex = Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,"0")}).join("");
+      if(hex === HASH){
+        sessionStorage.setItem(UNLOCK_KEY, "1");
+        error.textContent = "";
+        window.location.href = "/Subjects";
+      } else {
+        error.textContent = "Incorrect password. Try again.";
+        input.value = "";
+        input.focus();
+      }
+    });
+  });
+
+  // Guide toggle
+  var guideBtn = document.getElementById("guide-toggle");
+  var guidePanel = document.getElementById("guide-panel");
+  guideBtn.addEventListener("click", function(){
+    var open = guidePanel.classList.toggle("open");
+    guideBtn.textContent = open ? "Hide ↑" : "What's in this vault? →";
+  });
+
+  // Consultation toggle
+  var consultBtn = document.getElementById("consult-toggle");
+  var consultPanel = document.getElementById("consult-panel");
+  consultBtn.addEventListener("click", function(){
+    var open = consultPanel.classList.toggle("open");
+    consultBtn.textContent = open ? "Hide ↑" : "Book a slot →";
+    if(open){
+      consultPanel.scrollIntoView({behavior:"smooth",block:"start"});
+      initCal();
+    }
+  });
+
+  // Cal.com embed (lazy, only on first open)
+  var calLoaded = false;
+  function initCal(){
+    if(calLoaded) return;
+    calLoaded = true;
+    (function(C,A,L){
+      var p=function(a,ar){a.q.push(ar)};
+      var d=C.document;
+      C.Cal=C.Cal||function(){
+        var cal=C.Cal;
+        if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}
+        if(arguments[0]===L){
+          var api=function(){p(api,arguments)};
+          var ns=arguments[1];
+          api.q=api.q||[];
+          if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal.ns[ns],arguments);p(cal,["initNamespace",ns])}
+          else p(cal,arguments);
+          return;
+        }
+        p(cal,arguments);
+      };
+    })(window,"https://app.cal.com/embed/embed.js","init");
+    window.Cal("init","consultation",{origin:"https://cal.com"});
+    window.Cal.ns.consultation("inline",{elementOrSelector:"#cal-inline",calLink:"YOUR-CAL-USERNAME/consultation",config:{layout:"month_view"}});
+    window.Cal.ns.consultation("ui",{hideEventTypeDetails:false,layout:"month_view"});
+  }
+})();
+</script>
+</body>
+</html>
