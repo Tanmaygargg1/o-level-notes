@@ -20,20 +20,22 @@ export default ((opts: LockGateOptions) => {
     return (
       <div id="lock-gate" data-active={isLocked ? "true" : "false"} data-hash={opts.passwordHash}>
         <form id="lock-gate-form" class="lock-gate-card">
-          <p class="lock-gate-title">{opts.title ?? "This content is locked"}</p>
+          <p class="lock-gate-title">{opts.title ?? "Private Notes"}</p>
           <p class="lock-gate-subtitle">
             {opts.subtitle ?? "Enter the password to view these notes."}
           </p>
-          <input
-            id="lock-gate-input"
-            type="password"
-            name="password"
-            autocomplete="current-password"
-            placeholder="Password"
-            aria-label="Password"
-          />
-          <button type="submit">Unlock</button>
-          <p id="lock-gate-error" role="alert"></p>
+          <div class="lock-gate-fields">
+            <input
+              id="lock-gate-input"
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="Password"
+              aria-label="Password"
+            />
+            <button type="submit">Unlock</button>
+            <p id="lock-gate-error" role="alert"></p>
+          </div>
         </form>
       </div>
     )

@@ -81,6 +81,49 @@ textarea:focus-visible {
   border-radius: 3px;
 }
 
+/* ── HOME NAV TABS ────────────────────────────────────────────────────────── */
+.home-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.home-tab {
+  flex: 1 1 220px;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  transition:
+    border-color 0.15s ease-out,
+    transform 0.15s ease-out;
+
+  & > h3:first-child {
+    margin-top: 0;
+  }
+
+  & > p {
+    color: var(--gray);
+  }
+
+  &:hover {
+    border-color: var(--secondary);
+    transform: translateY(-2px);
+  }
+
+  a.internal {
+    font-weight: 700;
+    color: var(--secondary);
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+      color: var(--tertiary);
+    }
+  }
+}
+
 /* ── MOTION ───────────────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *,

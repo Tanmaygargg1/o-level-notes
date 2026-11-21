@@ -8,12 +8,33 @@ I’m sharing this system here for anyone who feels it might help. Going through
 
 Just to give some context, I took eight O-Level subjects and earned distinctions in all of them.
 
-____
-#### README!
-[[Vault Usage Instructions (PLEASE READ!)]]
+New here? Start with the [[Vault Usage Instructions (PLEASE READ!)|vault usage instructions]].
 
-#### Delve into the content!
-[[Subjects]]
+____
+
+<div class="home-tabs">
+
+<div class="home-tab">
+
+### 📘 Notes
+
+Browse every O-Level subject — Biology, Chemistry, Physics, History, Social Studies, and English.
+
+[[Subjects|Open the notes →]]
+
+</div>
+
+<div class="home-tab">
+
+### 📅 Consultation
+
+Book a 1-on-1 session with me if you need extra help.
+
+[[Book a Consultation|Book a slot →]]
+
+</div>
+
+</div>
 
 _____
 #### Contact Me!
