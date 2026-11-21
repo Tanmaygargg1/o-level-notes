@@ -32,9 +32,19 @@ Browse every O-Level subject — Biology, Chemistry, Physics, History, Social St
 
 Book a 1-on-1 session with me if you need extra help.
 
-[[Book a Consultation|Book a slot →]]
+<button class="home-reveal-btn" data-reveal-target="consultation-panel">Book a slot →</button>
 
 </div>
+
+</div>
+
+<div class="home-panel" id="consultation-panel" hidden>
+
+#### Book a Consultation
+
+Pick a time below and it'll go straight onto my calendar.
+
+<div id="my-cal-inline"></div>
 
 </div>
 

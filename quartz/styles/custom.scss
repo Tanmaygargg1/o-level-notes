@@ -112,7 +112,8 @@ textarea:focus-visible {
     transform: translateY(-2px);
   }
 
-  a.internal {
+  a.internal,
+  .home-reveal-btn {
     font-weight: 700;
     color: var(--secondary);
     background-color: transparent;
@@ -121,6 +122,30 @@ textarea:focus-visible {
     &:hover {
       color: var(--tertiary);
     }
+  }
+}
+
+.home-reveal-btn {
+  display: inline-block;
+  font-family: var(--bodyFont);
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease-out;
+}
+
+.home-panel {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--lightgray);
+
+  & > h4:first-child {
+    margin-top: 0;
+  }
+
+  #my-cal-inline {
+    width: 100%;
+    min-height: 650px;
   }
 }
 

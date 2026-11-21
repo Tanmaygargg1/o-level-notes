@@ -7,10 +7,11 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   afterBody: [
     Component.LockGate({
-      publicSlugs: ["index", "Book-a-Consultation"],
+      publicSlugs: ["index"],
       // SHA-256 hex digest of the password
       passwordHash: "28ba57224a8bd4ec630f59a98d353561e7267b79af92fa6b7af7965e5aadbef4",
     }),
+    Component.HomeTabs(),
   ],
   footer: Component.Footer({
     links: {

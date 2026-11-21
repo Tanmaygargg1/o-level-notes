@@ -14,5 +14,6 @@ export declare global {
     spaNavigate(url: URL, isBack: boolean = false)
     addCleanup(fn: (...args: any[]) => void)
     __lockGateBound?: boolean
+    __calEmbedInitialized?: boolean
   }
 }
