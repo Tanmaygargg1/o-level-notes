@@ -10,7 +10,19 @@ I’m sharing this system here for anyone who feels it might help. Going through
 
 Just to give some context, I took eight O-Level subjects and earned distinctions in all of them.
 
-New here? Start with the [[Vault Usage Instructions (PLEASE READ!)|vault usage instructions]].
+New here? <button class="home-reveal-btn" data-reveal-target="vault-guide-panel">Read the vault usage guide →</button>
+
+<div class="home-panel" id="vault-guide-panel" hidden>
+
+#### What's in this vault
+
+Here is the content included in this vault:
+- All content required for O-Level Biology, Chemistry, Physics, Elective History, Social Studies, and English
+- Answer techniques
+- Sample questions and answers
+- And more!
+
+</div>
 
 ____
 
