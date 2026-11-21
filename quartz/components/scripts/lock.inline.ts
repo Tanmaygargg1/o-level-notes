@@ -34,6 +34,29 @@ function applyLockState() {
 
 applyLockState()
 
+// Links into locked pages (e.g. the "Notes" tile on the home page) show the
+// gate right where you are instead of navigating first. Once unlocked, the
+// pending destination is where we actually go.
+function bindLockTriggers() {
+  const gate = document.getElementById("lock-gate")
+  if (!gate) return
+
+  document.querySelectorAll<HTMLAnchorElement>(".lock-trigger a").forEach((link) => {
+    link.onclick = (e) => {
+      if (sessionStorage.getItem(UNLOCK_KEY) === "1") return
+
+      e.preventDefault()
+      gate.dataset.pendingNav = link.getAttribute("href") ?? ""
+      gate.classList.remove("lock-gate-hidden")
+      document.body.style.overflow = "hidden"
+      const input = document.getElementById("lock-gate-input") as HTMLInputElement | null
+      input?.focus()
+    }
+  })
+}
+
+bindLockTriggers()
+
 if (!window.__lockGateBound) {
   window.__lockGateBound = true
 
@@ -53,7 +76,16 @@ if (!window.__lockGateBound) {
     if (attempt === expected) {
       sessionStorage.setItem(UNLOCK_KEY, "1")
       if (error) error.textContent = ""
-      applyLockState()
+      input.value = ""
+
+      const pending = gate.dataset.pendingNav
+      delete gate.dataset.pendingNav
+
+      if (pending) {
+        window.spaNavigate(new URL(pending, window.location.href))
+      } else {
+        applyLockState()
+      }
     } else {
       if (error) error.textContent = "Incorrect password. Try again."
       input.value = ""

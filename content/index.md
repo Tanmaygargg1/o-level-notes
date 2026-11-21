@@ -22,7 +22,11 @@ ____
 
 Browse every O-Level subject — Biology, Chemistry, Physics, History, Social Studies, and English.
 
+<div class="lock-trigger">
+
 [[Subjects|Open the notes →]]
+
+</div>
 
 </div>
 
