@@ -2,6 +2,8 @@
 title: Ultimate-O-Level-Notes (2025 syllabus) 
 ---
 
+**What is this?** A free, complete set of O-Level revision notes covering Biology, Chemistry, Physics, History, Social Studies, and English for the 2025 syllabus — everything I personally used to study, organised here so you can revise faster and with more confidence.
+
 Hi everyone! I’m Tanmay, a former student of Swiss Cottage Secondary School in Singapore. Back in school, I often felt that learning felt slow and inefficient, so I built my own system to study smarter and faster — giving me time to explore my other passions along the way.
 
 I’m sharing this system here for anyone who feels it might help. Going through these notes once made me feel confident and ready for the O Levels.
